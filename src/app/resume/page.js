@@ -61,7 +61,7 @@ export default function Resume() {
       {/* Contact CTA */}
       <section className="max-w-4xl mx-auto py-12 px-4 text-center">
         <h2 className="text-3xl font-bold text-orange-400 mb-4">Want to collaborate?</h2>
-        <p className="text-gray-700 mb-6">I'm open to new opportunities and creative challenges. Let's connect and make something great!</p>
+        <p className="text-gray-700 mb-6">I`&apos;`m open to new opportunities and creative challenges. Let`&apos;`s connect and make something great!</p>
         <a href="/contact" className="bg-orange-400 text-white px-8 py-4 rounded-full font-bold shadow hover:bg-orange-500 transition">Contact Me</a>
       </section>
     </main>

@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ServiceCard from "./ServiceCard";
+import Image from "next/image";
 
 export default function Services({ servicesRef }) {
   const [openIdx, setOpenIdx] = useState(null);
@@ -142,10 +143,10 @@ export default function Services({ servicesRef }) {
               <h3 className="text-xl font-semibold mb-4">{card.title}</h3>
               <div className="flex gap-2 mb-4">
                 <div className="w-20 h-20  rounded-lg" >
-                    <img src={card.img1} alt={card.alt} className="w-full h-full object-cover rounded-lg" onError={e => { e.target.onerror = null; e.target.src = '/globe.svg'; }} />
+                    <Image width={80} height={80} src={card.img1} alt={card.alt} className="w-full h-full object-cover rounded-lg" onError={e => { e.target.onerror = null; e.target.src = '/globe.svg'; }} />
                     </div>
                 <div className="w-20 h-20  rounded-lg" >
-                    <img src={card.img2} alt={card.alt} className="w-full h-full object-cover rounded-lg" onError={e => { e.target.onerror = null; e.target.src = '/globe.svg'; }} />
+                    <Image width={80} height={80}  src={card.img2} alt={card.alt} className="w-full h-full object-cover rounded-lg" onError={e => { e.target.onerror = null; e.target.src = '/globe.svg'; }} />
                     </div>
               </div>
               <button
@@ -172,7 +173,7 @@ export default function Services({ servicesRef }) {
               <h3 className="text-2xl font-bold text-orange-400 mb-4">{cards[openIdx].title}</h3>
               <div className="grid grid-cols-5 gap-4 mb-2">
                 {toolIcons[openIdx].map((icon, i) => (
-                  <img key={i} src={icon} alt="tool" className="w-12 h-12 object-contain rounded-lg border border-gray-200" />
+                  <Image width={48} height={48} key={i} src={icon} alt="tool" className="w-12 h-12 object-contain rounded-lg border border-gray-200" />
                 ))}
               </div>
             </div>

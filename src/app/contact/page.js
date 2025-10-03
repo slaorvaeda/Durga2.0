@@ -25,8 +25,8 @@ export default function Contact() {
   <div className="flex flex-col justify-between p-6 sm:p-8 md:p-10 gap-6 sm:gap-8 bg-white/90 border-l-8 border-gray-300 border-t-8 rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none shadow-2xl">
           <div>
             <h2 className="text-3xl font-bold mb-4 text-gray-900">Get In Touch</h2>
-            <p className="text-gray-600 mb-4">I'm always open to new projects, collaborations, and creative ideas. Drop a message or reach out via email or phone!</p>
-            <p className="text-gray-500 mb-4">Let's build something amazing together. I reply within 24 hours.</p>
+            <p className="text-gray-600 mb-4">I`&apos;`m always open to new projects, collaborations, and creative ideas. Drop a message or reach out via email or phone!</p>
+            <p className="text-gray-500 mb-4">Let`&apos;`s build something amazing together. I reply within 24 hours.</p>
           </div>
           <div className="flex flex-col gap-4 mt-8">
             {contactInfo.map((info) => (

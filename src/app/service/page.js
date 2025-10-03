@@ -48,7 +48,7 @@ export default function Service() {
 
       {/* Client Logos */}
       <section className="max-w-4xl mx-auto py-8 px-4 text-center">
-        <h2 className="text-2xl font-bold text-orange-400 mb-4">Brands I've Worked With</h2>
+        <h2 className="text-2xl font-bold text-orange-400 mb-4">Brands I`&apos;`ve Worked With</h2>
         <div className="flex flex-wrap gap-8 justify-center items-center">
           {["Cognizant", "Sugee", "Cinetstox", "JCrea", "Lirante"].map(brand => (
             <span key={brand} className="bg-white rounded-full px-8 py-4 shadow text-gray-700 font-bold border border-orange-100">{brand}</span>
@@ -59,7 +59,7 @@ export default function Service() {
       {/* Contact CTA */}
       <section className="max-w-4xl mx-auto py-12 px-4 text-center">
         <h2 className="text-3xl font-bold text-orange-400 mb-4">Ready to start your project?</h2>
-        <p className="text-gray-700 mb-6">Let's collaborate and create something amazing. Reach out to discuss your ideas!</p>
+        <p className="text-gray-700 mb-6">Let`&apos;`s collaborate and create something amazing. Reach out to discuss your ideas!</p>
         <a href="/contact" className="bg-orange-400 text-white px-8 py-4 rounded-full font-bold shadow hover:bg-orange-500 transition">Contact Me</a>
       </section>
     </main>

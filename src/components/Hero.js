@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 
 export default function Hero() {
@@ -51,18 +52,18 @@ export default function Hero() {
     <div className="-mb-2 text-center z-0">
       <span className="inline-block bg-white text-black  rounded-full px-4 py-1 text-xs md:text-[16px] font-semibold border border-orange-400">Hello!</span>
       <h1 className="text-6xl font-bold mb-2 z-0 ">
-        I'm <span className="text-orange-400">Durga</span>,<br />Full Stack Developer
+        I`&apos;`m <span className="text-orange-400">Durga</span>,<br />Full Stack Developer
       </h1>
     </div>
     {/* Half Circle Background and Image */}
     <div ref={circleRef} className="relative flex flex-col items-center rounded-t-full h-1/2 w-1/2 md:w-[640px] md:h-[320px] bg-amber-400 translate-y-40">
       <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[420px] h-[220px] md:w-[620px] md:h-[300px] rounded-t-full -z-10 bg-amber-600 " />
-      <img ref={imageRef} src="/me.png" alt="Portfolio Hero" className="w-56 h-56 object-cover rounded-xl  scale-260 -translate-y-20 z-10" />
+      <Image width={500} height={500} ref={imageRef} src="/me.png" alt="Portfolio Hero" className="w-56 h-56 object-cover rounded-xl  scale-260 -translate-y-20 z-10" />
     </div>
     {/* Description and Buttons */}
     <div className="text-center mt-2 z-20">
       <p className="text-white max-w-xl mx-auto mb-4">
-        Durga's Exceptional Full stack devloper ensure our website's success. <br />  Highly Recommended
+        Durga`&apos;`s Exceptional Full stack developer ensure our website`&apos;`s success. <br />  Highly Recommended
       </p>
       <div className="flex items-center justify-center mt-4">
         {/* on hover hi reme portfolio is transporent  */}

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const ProjectDetails = () => {
@@ -75,7 +76,7 @@ const ProjectDetails = () => {
               <a href={project.link} target="_blank" rel="noopener noreferrer" className="absolute inset-0 z-10 cursor-pointer flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/30 text-white text-lg font-bold">
                 {project.label}
               </a>
-              <img
+              <Image width={idx === 0 ? 480 : 350} height={idx === 0 ? 320 : 200}
                 src={project.img}
                 alt={project.alt}
                 className="w-full h-full object-cover"

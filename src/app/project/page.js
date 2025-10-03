@@ -58,7 +58,7 @@ export default function Project() {
       {/* Contact CTA */}
   <section className="max-w-4xl mx-auto py-12 px-4 text-center" data-aos="fade-up">
         <h2 className="text-3xl font-bold text-orange-400 mb-4">Have a project idea?</h2>
-        <p className="text-gray-700 mb-6">Let's bring your vision to life. Reach out to discuss your project and start collaborating!</p>
+        <p className="text-gray-700 mb-6">Let`&apos;`s bring your vision to life. Reach out to discuss your project and start collaborating!</p>
         <a href="/contact" className="bg-orange-400 text-white px-8 py-4 rounded-full font-bold shadow hover:bg-orange-500 transition">Contact Me</a>
       </section>
     </main>

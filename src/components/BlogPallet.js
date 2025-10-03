@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 export default function BlogPallet({ post, onClose }) {
@@ -29,7 +30,7 @@ export default function BlogPallet({ post, onClose }) {
         >
           ×
         </button>
-        <img src={post.image} alt={post.title} className="rounded-xl w-full mb-4" />
+        <Image width={500} height={300} src={post.image} alt={post.title} className="rounded-xl w-full mb-4" />
         <div className="flex gap-2 items-center mb-2">
           <span className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs font-semibold">{post.tag}</span>
           <span className="text-xs text-gray-400">• {post.author}</span>

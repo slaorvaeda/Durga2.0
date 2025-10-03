@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Image from "next/image";
 
 export default function Testimonials() {
   useEffect(() => {
@@ -36,7 +37,7 @@ export default function Testimonials() {
               <div key={i} className="bg-black/60 rounded-2xl p-6 shadow-lg relative flex flex-col gap-4">
                 <span className="absolute top-6 left-6 text-5xl text-gray-400 opacity-30">“</span>
                 <div className="flex items-center gap-3 mb-2">
-                  <img src="/avatar.jpg" alt="Jayesh Patil" className="w-10 h-10 rounded-full object-cover" onError={e => {e.target.onerror=null;e.target.src='/globe.svg';}} />
+                  <Image width={40} height={40} src="/avatar.jpg" alt="Jayesh Patil" className="w-10 h-10 rounded-full object-cover" onError={e => {e.target.onerror=null;e.target.src='/globe.svg';}} />
                   <div>
                     <span className="font-bold text-white">Jayesh Patil</span>
                     <span className="block text-xs text-gray-400">CEO, Lirante</span>

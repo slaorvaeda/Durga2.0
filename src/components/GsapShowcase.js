@@ -2,6 +2,7 @@
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from "next/image";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function GsapShowcase() {
@@ -68,7 +69,7 @@ export default function GsapShowcase() {
                                 // textShadow: `0 0 16px hsl(${i * 36}, 80%, 70%)`,
                             }}
                         >
-                            <img src={item.icon} alt={item.text} className="h-40 w-40" />
+                            <Image width={160} height={160} src={item.icon} alt={item.text} className="h-40 w-40" />
                         </span>
                         {/* <span
                             className="text-2xl font-bold mb-2 drop-shadow-lg animate-fadeInUp group-hover:text-black group-hover:scale-110 transition-all duration-300"

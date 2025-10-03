@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Image from "next/image";
 
 export default function HireMe() {
   useEffect(() => {
@@ -12,7 +13,7 @@ export default function HireMe() {
         <div className="relative w-full md:w-1/2 flex justify-center">
           {/* Orange half circle background */}
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-orange-200 rounded-full -z-10" />
-          <img src="/1.png" alt="Hire Me" className="w-64 h-64 object-cover rounded-xl  z-10" />
+          <Image width={256} height={256} src="/1.png" alt="Hire Me" className="w-64 h-64 object-cover rounded-xl  z-10" />
         </div>
         <div className="w-full md:w-1/2 flex flex-col items-start justify-center gap-6">
           <h2 className="text-3xl font-bold mb-2 text-gray-900">

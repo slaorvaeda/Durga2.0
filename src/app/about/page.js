@@ -44,7 +44,7 @@ export default function About() {
           </div>
           {/* Card 2: Portfolio image */}
           <div data-aos="fade-down" className="absolute top-16 left-32 w-96 h-48 bg-[#232526] bg-opacity-80 rounded-xl shadow-lg overflow-hidden flex flex-col justify-end hover:z-10 hover:scale-105 transform transition-all duration-300">
-            <Image src="/test.png" width={400} height={300} alt="Portfolio" className="w-full h-32 object-cover" onError={e => {e.target.onerror=null;e.target.src='/test.png';}} />
+            <Image width={400} height={300} src="/test.png" alt="Portfolio" className="w-full h-32 object-cover" onError={e => {e.target.onerror=null;e.target.src='/test.png';}} />
             <div className="p-4 text-white">
               <div className="text-sm font-semibold mb-1">IMAGES ABOUT MY PASSION</div>
               <div className="text-xl font-bold mb-1">Have a nice trip visiting my portfolio</div>
@@ -53,11 +53,11 @@ export default function About() {
           </div>
           {/* Card 3: Designer profile */}
           <div data-aos="fade-right" className="absolute -top-10 -right-3 w-56 h-64 bg-[#232526]/90 bg-opacity-80 rounded-xl shadow-lg flex flex-col items-center justify-center p-4">
-            <Image src="https://durga-nayak.vercel.app/assets/fevicon-DHXt3vbQ.png" width={150} height={150} alt="Designer" className="w-38 h-38 object-cover rounded-full mb-2" />
+            <Image width={150} height={150} src="https://durga-nayak.vercel.app/assets/fevicon-DHXt3vbQ.png" alt="Designer" className="w-38 h-38 object-cover rounded-full mb-2" />
             <div className="text-white font-bold text-lg mb-1">Durga madhab Nayak</div>
             <div className="text-xs text-gray-300 mb-2">Fullstack Devloper</div>
             <div className="text-xs text-gray-400 mb-2">Living and designing in India. Currently working as a freelancer, always hoping to further my career in the design world.</div>
-            <a href="#contact" className="mt-2 px-4 py-2 rounded-full bg-orange-400 text-white font-semibold text-xs shadow hover:bg-orange-500 transition">Let's start a project together!</a>
+            <a href="#contact" className="mt-2 px-4 py-2 rounded-full bg-orange-400 text-white font-semibold text-xs shadow hover:bg-orange-500 transition">Let`&apos;` start a project together!</a>
             <a href="#contact" className="mt-2 px-4 py-2 rounded-full bg-orange-400 text-white font-semibold text-xs shadow hover:bg-orange-500 transition">Let&apos;s start a project together!</a>
           </div>
           {/* Card 4: Dog lover */}

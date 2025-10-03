@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Link from "next/link";
 
 export default function Footer() {
   useEffect(() => {
@@ -12,7 +13,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto flex flex-col gap-8">
         <div className="flex flex-col md:flex-row items-center justify-between mb-8 gap-4">
           <h2 className="text-3xl font-bold">Lets Connect there</h2>
-          <a href="#" className="bg-orange-400 text-white px-6 py-2 rounded-full font-semibold shadow hover:bg-orange-500 transition flex items-center gap-2">Hire me <span>→</span></a>
+          <Link href="/contact" className="bg-orange-400 text-white px-6 py-2 rounded-full font-semibold shadow hover:bg-orange-500 transition flex items-center gap-2">Hire me <span>→</span></Link>
         </div>
         <hr className="border-gray-600 mb-8" />
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
@@ -24,20 +25,20 @@ export default function Footer() {
             </div>
             <p className="text-gray-300 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.</p>
             <div className="flex gap-3 mt-2 text-xl">
-              <a href="#" aria-label="Facebook" className="hover:text-orange-400">FB</a>
-              <a href="#" aria-label="Instagram" className="hover:text-orange-400">IG</a>
-              <a href="#" aria-label="WhatsApp" className="hover:text-orange-400">WA</a>
-              <a href="#" aria-label="Twitter" className="hover:text-orange-400">TW</a>
+              <Link href="#" aria-label="Facebook" className="hover:text-orange-400">FB</Link>
+              <Link href="#" aria-label="Instagram" className="hover:text-orange-400">IG</Link>
+              <Link href="#" aria-label="WhatsApp" className="hover:text-orange-400">WA</Link>
+              <Link href="#" aria-label="Twitter" className="hover:text-orange-400">TW</Link>
             </div>
           </div>
           {/* Navigation */}
           <div>
             <h3 className="text-orange-400 font-semibold mb-2">Navigation</h3>
             <ul className="space-y-2 text-gray-300 text-sm">
-              <li><a href="/" className="hover:text-orange-400">Home</a></li>
-              <li><a href="/service" className="hover:text-orange-400">Service</a></li>
-              <li><a href="/resume" className="hover:text-orange-400">Resume</a></li>
-              <li><a href="/project" className="hover:text-orange-400">Project</a></li>
+              <li><Link href="/" className="hover:text-orange-400">Home</Link></li>
+              <li><Link href="/service" className="hover:text-orange-400">Service</Link></li>
+              <li><Link href="/resume" className="hover:text-orange-400">Resume</Link></li>
+              <li><Link href="/project" className="hover:text-orange-400">Project</Link></li>
             </ul>
           </div>
           {/* Contact */}
@@ -62,8 +63,8 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between text-xs text-gray-400 gap-2">
           <span>Copyright© 2023 Jayesh. All Rights Reserved.</span>
           <div className="flex gap-4">
-            <a href="#" className="hover:text-orange-400">User Terms & Conditions</a>
-            <a href="#" className="hover:text-orange-400">Privacy Policy</a>
+            <Link href="#" className="hover:text-orange-400">User Terms & Conditions</Link>
+            <Link href="#" className="hover:text-orange-400">Privacy Policy</Link>
           </div>
         </div>
       </div>

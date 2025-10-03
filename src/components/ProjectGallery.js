@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React from "react";
 
 const ProjectGallery = () => {
@@ -17,7 +18,7 @@ const ProjectGallery = () => {
         <div className="grid grid-cols-2 gap-4 mb-4">
           {leftImages.map((src, idx) => (
             <div key={idx} className="bg-white shadow-lg overflow-hidden h-[150px] w-full">
-              <img src={src} alt={`Project Left ${idx+1}`} className="object-cover w-full h-full" />
+              <Image width={150} height={150} src={src} alt={`Project Left ${idx+1}`} className="object-cover w-full h-full" />
             </div>
           ))}
         </div>
@@ -50,12 +51,12 @@ const ProjectGallery = () => {
           <h3 className="font-bold text-gray-800 mb-1 text-sm">LOREM IPSUM DOLOR</h3>
           <p className="text-gray-700 text-xs mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <div className="bg-white shadow-lg overflow-hidden h-[300px] w-full rounded-2xl">
-            <img src={rightImages[0]} alt="Gallery 1" className="object-cover w-full h-full" />
+            <Image width={500} height={300} src={rightImages[0]} alt="Gallery 1" className="object-cover w-full h-full" />
           </div>
         </div>
         <div className="flex flex-col gap-4">
           <div className="bg-white shadow-lg overflow-hidden h-[260px] w-full mb-2 rounded-2xl">
-            <img src={rightImages[1]} alt="Gallery 2" className="object-cover w-full h-full" />
+            <Image width={500} height={300} src={rightImages[1]} alt="Gallery 2" className="object-cover w-full h-full" />
           </div>
           <h3 className="font-bold text-gray-800 mb-1 text-sm">LOREM IPSUM DOLOR</h3>
           <p className="text-gray-700 text-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -64,16 +65,16 @@ const ProjectGallery = () => {
           <h3 className="font-bold text-gray-800 mb-1 text-sm">LOREM IPSUM DOLOR</h3>
           <p className="text-gray-700 text-xs mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <div className="bg-white shadow-lg overflow-hidden h-[300px] w-full object-coverd rounded-2xl">
-            <img src={rightImages[2]} alt="Gallery 3" className="object-cover w-full h-full" />
+            <Image width={500} height={300} src={rightImages[2]} alt="Gallery 3" className="object-cover w-full h-full" />
           </div>
         </div>
         <div className="flex flex-col gap-4">
           <div className="grid grid-cols-2 gap-2 mb-2 rounded-2xl">
             <div className="bg-white shadow-lg overflow-hidden h-[70px] w-full rounded-2xl">
-              <img src={rightImages[3]} alt="Gallery 4" className="object-cover w-full h-full" />
+              <Image width={500} height={300} src={rightImages[3]} alt="Gallery 4" className="object-cover w-full h-full" />
             </div>
             <div className="bg-white shadow-lg overflow-hidden h-[70px] w-full rounded-2xl">
-              <img src={rightImages[4]} alt="Gallery 5" className="object-cover w-full h-full" />
+              <Image width={500} height={300} src={rightImages[4]} alt="Gallery 5" className="object-cover w-full h-full" />
             </div>
           </div>
           <h3 className="font-bold text-gray-800 mb-1 text-sm">LOREM IPSUM DOLOR</h3>

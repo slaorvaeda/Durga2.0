@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const ProjectAbout = () => {
@@ -13,9 +14,9 @@ const ProjectAbout = () => {
     <section className="w-full min-h-screen bg-gradient-to-r from-gray-100 to-gray-300 flex flex-col md:flex-row items-center justify-between px-36 py-12 gap-8">
       {/* Left: Image & About Us */}
       <div className="flex-1 flex flex-col items-center md:items-start">
-        <div className="w-[260px] h-[200px] bg-white overflow-hidden mb-6 shadow-lg">
-          <img
-            src="/public/globe.svg" // Replace with your project image
+        <div className="w-[260px] h-[200px]  overflow-hidden mb-6 ">
+          <Image width={260} height={200}
+            src="https://durga-nayak.vercel.app/assets/fevicon-DHXt3vbQ.png" // Replace with your project image
             alt="Project About"
             className="object-cover w-full h-full"
           />

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import BlogPallet from "./BlogPallet";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Image from "next/image";
 
 export default function BlogPosts() {
   const [openPost, setOpenPost] = useState(null);
@@ -90,7 +91,7 @@ export default function BlogPosts() {
           {(showAll ? blogData : blogData.slice(0, 3)).map((post, i) => (
             <div key={i} className="bg-white rounded-2xl shadow-lg p-4 relative flex flex-col gap-4">
               <div className="relative">
-                <img src={post.image} alt={post.title} className="rounded-xl w-full mb-2" />
+                <Image width={500} height={300} src={post.image} alt={post.title} className="rounded-xl w-full mb-2" />
                 <button
                   className="absolute top-0 right-0 bg-orange-400 text-white rounded-full h-14 w-14 shadow-lg cursor-pointer text-xl text-center m-auto flex justify-center items-center"
                   onClick={() => setOpenPost(post)}
