@@ -134,7 +134,7 @@ export default function PortfolioShowcase() {
                 ×
               </button>
               <div className="flex-shrink-0 flex justify-center items-center md:w-1/2 w-full">
-                <Image width={500} height={500} src={openCard.image} alt={openCard.title} className="rounded-xl w-full max-w-xs mb-4 md:mb-0" />
+                <Image width={300} height={300} src={openCard.image} alt={openCard.title} className="rounded-xl w-full max-w-xs mb-4 md:mb-0" />
               </div>
               <div className="flex flex-col justify-center md:w-1/2 w-full">
                 <h3 className="text-2xl font-bold text-orange-400 mb-2">{openCard.title}</h3>
