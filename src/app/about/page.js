@@ -61,11 +61,11 @@ export default function About() {
             <a href="#contact" className="mt-2 px-4 py-2 rounded-full bg-orange-400 text-white font-semibold text-xs shadow hover:bg-orange-500 transition">Let&apos;s start a project together!</a>
           </div>
           {/* Card 4: Dog lover */}
-          <div className="absolute bottom-0 left-0 w-96 h-28 bg-white rounded-xl shadow-lg flex justify-center items-center ">
+          <div className=" hidden absolute bottom-0 left-0 w-96 h-28 bg-white rounded-xl shadow-lg md:flex justify-center items-center ">
             <div className="scale-450 object-cover text-center w-10"  >
               <GiSittingDog />
             </div>
-            <div className="p-4 flex flex-col justify-center">
+            <div className="  p-4 flex flex-col justify-center">
               <div className="text-xs text-[#4EC3D6] font-bold mb-1">DOG LOVER</div>
               <div className="text-base font-semibold text-gray-800 mb-1">Multidisciplinary Designer</div>
               <div className="text-xs text-gray-500">Advanced skills in Graphic and Web Design, User Research, Mobile Applications, Photography, etc.</div>

@@ -5,7 +5,7 @@ const ProjectDetails = () => {
   
 
   return (
-    <section className="w-full min-h-screen bg-gradient-to-r from-gray-100 to-gray-200 flex flex-col md:flex-row items-center justify-between px-36 py-12 gap-8 ">
+    <section className="w-full max-w-[100vw] min-h-screen bg-gradient-to-r from-gray-100 to-gray-200 flex flex-col md:flex-row items-center justify-between px-36 py-12 gap-8 overflow-x-hidden">
       {/* Left: Project Info */}
       <div className="flex-1 flex flex-col justify-center">
         <h2 className="text-lg font-semibold mb-2 tracking-widest text-gray-800">PROJECT DEMO</h2>
