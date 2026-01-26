@@ -16,7 +16,7 @@ export default function MobileNavbar() {
       <ul className="flex justify-between items-center px-4 py-2">
         {navItems.map((item) => (
           <li key={item.href} className="flex-1 flex flex-col items-center">
-            <Link href={item.href} className={`flex flex-col items-center text-xs font-semibold py-1 px-2 rounded-lg transition-colors ${pathname === item.href ? 'text-orange-400' : 'text-gray-700'} hover:text-orange-400`}>
+            <Link href={item.href} prefetch={true} className={`flex flex-col items-center text-xs font-semibold py-1 px-2 rounded-lg transition-colors ${pathname === item.href ? 'text-orange-400' : 'text-gray-700'} hover:text-orange-400`}>
               <span className="text-2xl mb-1">{item.i}</span>
               {item.label}
             </Link>

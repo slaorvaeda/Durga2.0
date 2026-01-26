@@ -13,7 +13,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto flex flex-col gap-8">
         <div className="flex flex-col md:flex-row items-center justify-between mb-8 gap-4">
           <h2 className="text-3xl font-bold">Lets Connect there</h2>
-          <Link href="/contact" className="bg-orange-400 text-white px-6 py-2 rounded-full font-semibold shadow hover:bg-orange-500 transition flex items-center gap-2">Hire me <span>→</span></Link>
+          <Link href="/contact" prefetch={true} className="bg-orange-400 text-white px-6 py-2 rounded-full font-semibold shadow hover:bg-orange-500 transition flex items-center gap-2">Hire me <span>→</span></Link>
         </div>
         <hr className="border-gray-600 mb-8" />
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
@@ -35,10 +35,10 @@ export default function Footer() {
           <div>
             <h3 className="text-orange-400 font-semibold mb-2">Navigation</h3>
             <ul className="space-y-2 text-gray-300 text-sm">
-              <li><Link href="/" className="hover:text-orange-400">Home</Link></li>
-              <li><Link href="/service" className="hover:text-orange-400">Service</Link></li>
-              <li><Link href="/resume" className="hover:text-orange-400">Resume</Link></li>
-              <li><Link href="/project" className="hover:text-orange-400">Project</Link></li>
+              <li><Link href="/" prefetch={true} className="hover:text-orange-400">Home</Link></li>
+              <li><Link href="/service" prefetch={true} className="hover:text-orange-400">Service</Link></li>
+              <li><Link href="/resume" prefetch={true} className="hover:text-orange-400">Resume</Link></li>
+              <li><Link href="/project" prefetch={true} className="hover:text-orange-400">Project</Link></li>
             </ul>
           </div>
           {/* Contact */}

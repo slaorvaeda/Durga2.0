@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import SplineLoader from "@/components/SplineLoader";
 
 const ProjectAbout = () => {
   const features = [
@@ -14,14 +13,13 @@ const ProjectAbout = () => {
 
   return (
     <section className="w-full min-h-screen bg-gradient-to-r from-gray-100 to-gray-300 flex flex-col md:flex-row items-center justify-between px-36 py-12 gap-8">
-      {/* Left: 3D Model & About Us */}
+      {/* Left: Image & About Us */}
       <div className="flex-1 flex flex-col items-center md:items-start" data-aos="fade-right">
-        <div className="w-[260px] h-[300px] rounded-xl overflow-hidden mb-6 shadow-2xl bg-gray-200" data-aos="zoom-in" data-aos-delay="100">
-          <SplineLoader 
-            scene="https://prod.spline.design/bWrqBAYKy1lBD5lU/scene.splinecode"
-            className="w-full h-full"
-            showLoader={true}
-            fallbackBg="bg-gradient-to-br from-gray-200 to-gray-300"
+        <div className="w-[260px] h-[200px] overflow-hidden mb-6" data-aos="zoom-in" data-aos-delay="100">
+          <Image width={260} height={200}
+            src="https://durga-nayak.vercel.app/assets/fevicon-DHXt3vbQ.png"
+            alt="Project About"
+            className="object-cover w-full h-full"
           />
         </div>
         <h2 className="text-lg font-semibold mb-2 tracking-widest text-gray-800" data-aos="fade-up" data-aos-delay="200">ABOUT US</h2>

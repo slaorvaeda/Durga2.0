@@ -7,6 +7,7 @@ import BlogPosts from "../components/BlogPosts";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import { useEffect, useRef } from "react";
+import { useRouter } from "next/navigation";
 import Service from "./service/page";
 import WorkExperience from "../components/WorkExperience";
 import HireMe from "../components/HireMe";
@@ -22,10 +23,32 @@ import { SiKubernetes, SiTypescript } from "react-icons/si";
 export default function Home() {
   const heroRef = useRef(null);
   const servicesRef = useRef(null);
+  const router = useRouter();
 
   useEffect(() => {
     AOS.init({ once: true, duration: 2000 });
   }, []);
+
+  // Prefetch all pages after home page renders for faster navigation
+  useEffect(() => {
+    // Wait for page to fully load, then prefetch other pages
+    const prefetchPages = () => {
+      const pages = ["/about", "/contact", "/project", "/resume", "/service"];
+      pages.forEach((page) => {
+        router.prefetch(page);
+      });
+    };
+
+    // Prefetch after initial render and animations
+    const timer = setTimeout(prefetchPages, 1500);
+    
+    // Also prefetch on idle
+    if (typeof window !== "undefined" && "requestIdleCallback" in window) {
+      requestIdleCallback(prefetchPages, { timeout: 2000 });
+    }
+
+    return () => clearTimeout(timer);
+  }, [router]);
 
   return (
     <main className="min-h-screen bg-white text-white font-sans">

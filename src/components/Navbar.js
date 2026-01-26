@@ -17,7 +17,7 @@ export default function Navbar() {
                 <nav className="w-3/4 max-w-[98vw] mx-auto my-4 rounded-full flex items-center justify-between px-8  bg-[#1a1a1a] text-white shadow-lg" style={{ border: '8px solid #232323' }} data-aos="fade-down">
             {/* Left: Home Button */}
             <div className="flex-1 flex items-center">
-                <Link href="/">
+                <Link href="/" prefetch={true}>
                     <span className={`font-bold text-lg px-8 py-4 rounded-full transition-all ${pathname === '/' ? 'bg-orange-400 text-white shadow-lg' : 'bg-transparent text-white'} hover:bg-orange-400 hover:text-white hidden md:inline-flex`}>
                         Home
                     </span>
@@ -30,17 +30,17 @@ export default function Navbar() {
             </div>
             {/* Right: Other Links */}
             <div className="flex-1 md:flex justify-end items-center gap-8 hidden">
-                <Link href="/about">
+                <Link href="/about" prefetch={true}>
                     <span className={`font-medium text-lg px-8 py-4 rounded-full transition-all ${pathname === '/about' ? glassClass : ''} hover:text-orange-400`}>
                         About
                     </span>
                 </Link>
-                <Link href="/project">
+                <Link href="/project" prefetch={true}>
                     <span className={`font-medium text-lg px-8 py-4 rounded-full transition-all ${pathname === '/project' ? glassClass : ''} hover:text-orange-400`}>
                         Project
                     </span>
                 </Link>
-                <Link href="/contact">
+                <Link href="/contact" prefetch={true}>
                     <span className={`font-medium text-lg px-8 py-4 rounded-full transition-all ${pathname === '/contact' ? glassClass : ''} hover:text-orange-400`}>
                         Contact
                     </span>
