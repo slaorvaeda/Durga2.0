@@ -29,7 +29,7 @@ const ProjectAbout = () => {
           Full Stack MERN Developer with 3 years of experience building scalable web applications using React.js, Node.js, Express.js, and MongoDB. I specialize in designing RESTful APIs, implementing JWT-based authentication, and deploying production systems on GCP and AWS.
         </p>
         <p className="text-gray-700 text-sm max-w-md" data-aos="fade-up" data-aos-delay="400">
-          I've delivered end-to-end client projects including e-commerce platforms, portfolio websites, and inventory management systems. Each project combines responsive UI design with robust backend architecture and cloud deployment.
+          I&apos;ve delivered end-to-end client projects including e-commerce platforms, portfolio websites, and inventory management systems. Each project combines responsive UI design with robust backend architecture and cloud deployment.
         </p>
       </div>
       {/* Right: Features List */}

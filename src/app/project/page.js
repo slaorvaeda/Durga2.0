@@ -21,7 +21,7 @@ export default function Project() {
       {/* Personal Project Intro */}
       <section className="max-w-4xl mx-auto py-16 px-4 text-center" data-aos="fade-up">
         <h1 className="text-5xl font-extrabold mb-4 text-orange-400">My Projects</h1>
-        <p className="text-lg text-gray-700 mb-8">A showcase of my work as a Full Stack MERN Developer. I've delivered 3 end-to-end client projects including e-commerce platforms, portfolio websites, and inventory management systems, each built with scalable architecture and modern technologies.</p>
+        <p className="text-lg text-gray-700 mb-8">A showcase of my work as a Full Stack MERN Developer. I&apos;ve delivered 3 end-to-end client projects including e-commerce platforms, portfolio websites, and inventory management systems, each built with scalable architecture and modern technologies.</p>
       </section>
 
      
