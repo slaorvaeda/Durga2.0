@@ -81,7 +81,7 @@ export default function Hero() {
     {/* Experience & Stars */}
     <div className="absolute right-16 top-1/2 -translate-y-3/2 flex flex-col items-center z-20">
       <span className="text-orange-400 text-2xl">★★★★★</span>
-      <span className="text-lg font-bold mt-2">2 Years</span>
+      <span className="text-lg font-bold mt-2">3 Years</span>
       <span className="text-xs text-gray-400">Experience</span>
     </div>
   </section>

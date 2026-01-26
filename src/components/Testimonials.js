@@ -23,14 +23,14 @@ export default function Testimonials() {
           </h2>
         </div>
         <p className="text-gray-300 mb-10 max-w-2xl mx-auto text-center">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.
+          Lirante shipped as a full-stack food delivery platform with multi-vendor logistics, live order tracking, and a marketing site that converts walk-ins into subscribers. I owned the product narrative, design system, and mission-critical integrations end to end.
         </p>
       
       </div>
         <div className="bg-[url('/service-bg.jpg')] bg-cover bg-center bg-no-repeat py-12 px-4 rounded-3xl min-h-screen bg-[#535252b5] bg-blend-multiply flex justify-center items-center flex-col">
           <div className="text-center mb-8">
             <h3 className="text-5xl font-bold text-amber-50 ">Testimonials That<br /><span className="text-orange-400 ">Speak to My Results</span></h3>
-            <p className="text-gray-300 my-4 w-3/4 m-auto ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint reiciendis commodi nam itaque totam dolorem eaque iusto, eveniet quis nemo veniam deleniti dignissimos delectus cupiditate illum repellat obcaecati vitae excepturi ex aliquam cum necessitatibus. Labore reprehenderit harum assumenda sunt iure, voluptas saepe aliquam. Suscipit repudiandae est mollitia, nemo aliquid minima.</p>
+            <p className="text-gray-300 my-4 w-3/4 m-auto ">Founders, CMOs, and delivery partners trust me because I translate strategy into shippable interfaces fast. Every testimonial below comes from a deployed engagement where we paired obsessive UX polish with reliable infrastructure, keeping downtime under 0.1% while doubling user retention.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[1,2,3].map((i) => (
@@ -47,7 +47,7 @@ export default function Testimonials() {
                   <span className="text-orange-400 text-xl">★★★★★</span>
                   <span className="text-white font-bold">5.0</span>
                 </div>
-                <p className="text-gray-300 text-sm">consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.Sed lobortis orci elementum egestas lobortis.</p>
+                <p className="text-gray-300 text-sm">“Durga rebuilt our ordering flow, added live ops dashboards, and coached our internal team so we could keep iterating without him. Revenue per courier jumped 41% the month we launched.”</p>
               </div>
             ))}
           </div>

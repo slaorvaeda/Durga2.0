@@ -23,7 +23,7 @@ export default function Footer() {
               <span className="bg-orange-400 rounded-full px-3 py-1 font-bold text-black">DN</span>
               <span className="font-bold text-lg tracking-wide">DNAYAK</span>
             </div>
-            <p className="text-gray-300 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.</p>
+            <p className="text-gray-300 text-sm">Full Stack MERN Developer with 3 years of experience building scalable web applications using React.js, Node.js, Express.js, and MongoDB. Experienced in designing RESTful APIs, implementing JWT-based authentication, role-based access control, and deploying production systems on GCP and AWS.</p>
             <div className="flex gap-3 mt-2 text-xl">
               <Link href="#" aria-label="Facebook" className="hover:text-orange-400">FB</Link>
               <Link href="#" aria-label="Instagram" className="hover:text-orange-400">IG</Link>
@@ -46,8 +46,9 @@ export default function Footer() {
             <h3 className="text-orange-400 font-semibold mb-2">Contact</h3>
             <ul className="space-y-2 text-gray-300 text-sm">
               <li>+91 7008654545</li>
-              <li>kanh123.ngp@email.com</li>
-              <li>Portfolio-dnayak.com</li>
+              <li>kanh123.ngp@gmail.com</li>
+              <li>BTM layout, Bangalore</li>
+              <li>durga2-0.vercel.app</li>
             </ul>
           </div>
           {/* Newsletter */}
@@ -61,7 +62,7 @@ export default function Footer() {
         </div>
         <hr className="border-gray-600 mb-4" />
         <div className="flex flex-col md:flex-row items-center justify-between text-xs text-gray-400 gap-2">
-          <span>Copyright© 2023 Jayesh. All Rights Reserved.</span>
+          <span>Copyright© 2025 Durga Madhab Nayak. All Rights Reserved.</span>
           <div className="flex gap-4">
             <Link href="#" className="hover:text-orange-400">User Terms & Conditions</Link>
             <Link href="#" className="hover:text-orange-400">Privacy Policy</Link>

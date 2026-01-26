@@ -25,6 +25,8 @@ export default function RootLayout({ children }) {
       <head>
         <title>{pageTitle}</title>
         <link rel="icon" href="/1.png" type="image/png" />
+        {/* DNS prefetch for Spline to improve loading */}
+        <link rel="dns-prefetch" href="https://prod.spline.design" />
       </head>
       <body className=" min-h-screen flex flex-col relative ">
         {/* Animated Intro Overlay as Component */}

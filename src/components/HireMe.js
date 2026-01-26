@@ -20,7 +20,7 @@ export default function HireMe() {
             Why <span className="text-orange-400">Hire me?</span>
           </h2>
           <p className="text-gray-500 mb-2 max-w-md">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis lacus nunc, posuere in justo vulputate, bibendum sodales
+            I blend product strategy with engineering so you get a single partner for research, prototyping, accessibility audits, and production-ready code. The result: confident launches and teams who understand every decision.
           </p>
           <div className="flex gap-8 mb-2">
             <div>

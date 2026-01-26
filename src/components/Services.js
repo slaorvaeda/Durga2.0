@@ -43,7 +43,7 @@ export default function Services({ servicesRef }) {
       title: "SDE",
       image: "/service2.png", // Replace with your actual image path
       img1:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrQ_CU3a6muH84mLfoP6xmM4ZJ9Z6RAXMmdA&s",
-      img2:"https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/n8n-color.png",
+      img2:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
       alt: "UI/UX Design Example"
     },
     {
@@ -132,13 +132,25 @@ export default function Services({ servicesRef }) {
   ];
 
   return (
-    <section ref={servicesRef} className="flex justify-center items-center relative bg-[url('/service-bg.jpg')] bg-[#9b9b9bb5] bg-blend-multiply  bg-cover bg-center min-h-screen" data-aos="fade-up">
-      <div className=" mx-auto">
-        <h2 className="text-5xl font-bold mb-2"><span className="text-orange-400">My Services</span></h2>
-        <p className="text-gray-300 mb-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis lacus nunc, posuere in justo vulputate, bibendum sodales lorem30</p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
+    <section
+      ref={servicesRef}
+      className="flex justify-center items-center relative bg-[url('/service-bg.jpg')] bg-[#9b9b9bb5] bg-blend-multiply bg-cover bg-center min-h-screen py-16 px-4"
+      data-aos="fade-up"
+    >
+      <div className="w-full max-w-6xl mx-auto text-center">
+        <h2 className="text-5xl font-bold mb-4">
+          <span className="text-orange-400">My Services</span>
+        </h2>
+        <p className="text-gray-300 mb-12 max-w-3xl mx-auto">
+          Every engagement starts with a product blueprint, then shifts into rapid prototyping, infrastructure automation, and growth experimentation so you get a resilient stack and a story customers care about.
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8 justify-items-center">
           {cards.map((card, idx) => (
-            <div key={idx} className="bg-black/80 rounded-2xl p-6 shadow-lg relative overflow-hidden group md:h-60 md:w-80 hover:scale-105 transition-all duration-300" data-aos="fade-up">
+            <div
+              key={idx}
+              className="bg-black/80 rounded-2xl p-6 shadow-lg relative overflow-hidden group w-full max-w-sm min-h-[260px] hover:-translate-y-1 hover:shadow-2xl transition-transform duration-300"
+              data-aos="fade-up"
+            >
               <div className="absolute top-0 right-0 w-24 h-24 bg-orange-200 rounded-bl-full -z-10 group-hover:scale-110 transition-transform duration-500" />
               <h3 className="text-xl font-semibold mb-4">{card.title}</h3>
               <div className="flex gap-2 mb-4">

@@ -6,54 +6,129 @@ export default function Resume() {
       {/* Personal Summary */}
       <section className="max-w-4xl mx-auto py-16 px-4 text-center">
         <h1 className="text-5xl font-extrabold mb-4 text-orange-400">My Resume</h1>
-        <p className="text-lg text-gray-700 mb-8">A snapshot of my professional journey, skills, and achievements. I believe in lifelong learning and pushing creative boundaries.</p>
+        <p className="text-lg text-gray-700 mb-8">Full Stack MERN Developer with 3 years of experience building scalable web applications using React.js, Node.js, Express.js, and MongoDB. Experienced in designing RESTful APIs, implementing JWT-based authentication, role-based access control, and deploying production systems on GCP and AWS.</p>
       </section>
 
-      {/* Creative Timeline */}
+      {/* Education */}
       <section className="max-w-4xl mx-auto py-8 px-4">
-        <h2 className="text-3xl font-bold mb-6 text-orange-400">Career Timeline</h2>
-        <ol className="relative border-l-4 border-orange-200">
-          <li className="mb-10 ml-6">
-            <span className="absolute flex items-center justify-center w-8 h-8 bg-orange-400 rounded-full -left-4 ring-4 ring-white">2012</span>
-            <div className="bg-white rounded-xl shadow p-4">
-              <h3 className="font-bold text-lg text-orange-400">Freelance UI Designer</h3>
-              <p className="text-gray-600">Worked with startups and agencies to create engaging interfaces and improve user experience.</p>
+        <h2 className="text-3xl font-bold mb-6 text-orange-400">Education</h2>
+        <div className="space-y-6">
+          <div className="bg-white rounded-xl shadow p-6 border border-orange-100">
+            <h3 className="font-bold text-lg text-gray-900">Master of Computer Applications</h3>
+            <p className="text-orange-400 font-semibold mb-2">College of IT & Management</p>
+            <p className="text-gray-600">2023 - 2025</p>
+          </div>
+          <div className="bg-white rounded-xl shadow p-6 border border-orange-100">
+            <h3 className="font-bold text-lg text-gray-900">Bachelor of Science in Computer Science</h3>
+            <p className="text-orange-400 font-semibold mb-2">Khallikote Unitary University</p>
+            <p className="text-gray-600">2020 - 2023</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Work Experience */}
+      <section className="max-w-4xl mx-auto py-8 px-4">
+        <h2 className="text-3xl font-bold mb-6 text-orange-400">Work Experience</h2>
+        <div className="space-y-6">
+          <div className="bg-white rounded-xl shadow p-6 border border-orange-100">
+            <div className="flex justify-between items-start mb-3">
+              <div>
+                <h3 className="font-bold text-lg text-gray-900">MERN Full Stack Developer</h3>
+                <p className="text-orange-400 font-semibold">Impulse RetailNet</p>
+              </div>
+              <span className="text-gray-600 text-sm">2022 - 2025</span>
             </div>
-          </li>
-          <li className="mb-10 ml-6">
-            <span className="absolute flex items-center justify-center w-8 h-8 bg-orange-400 rounded-full -left-4 ring-4 ring-white">2015</span>
-            <div className="bg-white rounded-xl shadow p-4">
-              <h3 className="font-bold text-lg text-orange-400">Product Designer at JCrea</h3>
-              <p className="text-gray-600">Led UI/UX design for multiple award-winning projects, collaborating with cross-functional teams.</p>
+            <ul className="list-disc list-inside text-gray-700 space-y-2">
+              <li>Built and deployed a hub-level Inventory & Operations Management Platform using React.js, Node.js, Express.js, and MongoDB</li>
+              <li>Designed scalable REST APIs following microservices architecture and applied performance optimization techniques</li>
+              <li>Developed real-time dashboards for stock monitoring, low-inventory alerts, and order tracking, improving operational efficiency by ~40%</li>
+              <li>Implemented secure authentication and role-based access control (RBAC) using JWT</li>
+              <li>Deployed and maintained production systems on Google Cloud Platform Compute Engine with MongoDB Atlas</li>
+            </ul>
+          </div>
+          <div className="bg-white rounded-xl shadow p-6 border border-orange-100">
+            <div className="flex justify-between items-start mb-3">
+              <div>
+                <h3 className="font-bold text-lg text-gray-900">Freelancer</h3>
+              </div>
+              <span className="text-gray-600 text-sm">2025 - Present</span>
             </div>
-          </li>
-          <li className="ml-6">
-            <span className="absolute flex items-center justify-center w-8 h-8 bg-orange-400 rounded-full -left-4 ring-4 ring-white">2023</span>
-            <div className="bg-white rounded-xl shadow p-4">
-              <h3 className="font-bold text-lg text-orange-400">Lead Product Designer at Cinetstox</h3>
-              <p className="text-gray-600">Currently leading design at Cinetstox, Mumbai, focusing on innovative digital products.</p>
-            </div>
-          </li>
-        </ol>
+            <ul className="list-disc list-inside text-gray-700 space-y-2">
+              <li>Delivered 3 end-to-end client projects including e-commerce, portfolio, and inventory systems using the MERN stack</li>
+              <li>Built responsive and accessible user interfaces using React.js and Tailwind CSS</li>
+              <li>Integrated third-party services such as payment gateways, Cloudinary, and external APIs</li>
+              <li>Deployed applications to cloud environments and provided ongoing maintenance and client support</li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       {/* Skills & Certifications */}
       <section className="max-w-5xl mx-auto py-8 px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="bg-white rounded-2xl shadow p-8 flex flex-col gap-4 border border-orange-100">
           <h2 className="text-2xl font-bold text-orange-400 mb-2">Skills</h2>
-          <div className="grid grid-cols-2 gap-4">
-            {['UI/UX Design', 'App Design', 'Wireframing', 'Prototyping', 'User Research', 'Branding', 'Animation', 'Dashboard Design'].map(skill => (
-              <span key={skill} className="bg-orange-100 rounded-full px-4 py-2 text-gray-700 font-semibold text-center">{skill}</span>
-            ))}
+          <div className="space-y-4">
+            <div>
+              <h3 className="font-semibold text-gray-900 mb-2">Languages:</h3>
+              <div className="flex flex-wrap gap-2">
+                {['JavaScript', 'Python'].map(skill => (
+                  <span key={skill} className="bg-orange-100 rounded-full px-4 py-2 text-gray-700 font-semibold text-sm">{skill}</span>
+                ))}
+              </div>
+            </div>
+            <div>
+              <h3 className="font-semibold text-gray-900 mb-2">Frontend:</h3>
+              <div className="flex flex-wrap gap-2">
+                {['React.js', 'Next.js', 'Tailwind CSS'].map(skill => (
+                  <span key={skill} className="bg-orange-100 rounded-full px-4 py-2 text-gray-700 font-semibold text-sm">{skill}</span>
+                ))}
+              </div>
+            </div>
+            <div>
+              <h3 className="font-semibold text-gray-900 mb-2">Backend:</h3>
+              <div className="flex flex-wrap gap-2">
+                {['Node.js', 'Express.js'].map(skill => (
+                  <span key={skill} className="bg-orange-100 rounded-full px-4 py-2 text-gray-700 font-semibold text-sm">{skill}</span>
+                ))}
+              </div>
+            </div>
+            <div>
+              <h3 className="font-semibold text-gray-900 mb-2">Databases:</h3>
+              <div className="flex flex-wrap gap-2">
+                {['MongoDB', 'MySQL', 'PostgreSQL'].map(skill => (
+                  <span key={skill} className="bg-orange-100 rounded-full px-4 py-2 text-gray-700 font-semibold text-sm">{skill}</span>
+                ))}
+              </div>
+            </div>
+            <div>
+              <h3 className="font-semibold text-gray-900 mb-2">Cloud & DevOps:</h3>
+              <div className="flex flex-wrap gap-2">
+                {['GCP', 'AWS EC2', 'Docker', 'CI/CD', 'NGINX'].map(skill => (
+                  <span key={skill} className="bg-orange-100 rounded-full px-4 py-2 text-gray-700 font-semibold text-sm">{skill}</span>
+                ))}
+              </div>
+            </div>
+            <div>
+              <h3 className="font-semibold text-gray-900 mb-2">Tools:</h3>
+              <div className="flex flex-wrap gap-2">
+                {['Git', 'GitHub', 'Postman', 'Cloudinary'].map(skill => (
+                  <span key={skill} className="bg-orange-100 rounded-full px-4 py-2 text-gray-700 font-semibold text-sm">{skill}</span>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
         <div className="bg-white rounded-2xl shadow p-8 flex flex-col gap-4 border border-orange-100">
           <h2 className="text-2xl font-bold text-orange-400 mb-2">Certifications</h2>
-          <ul className="list-disc list-inside text-gray-700">
-            <li>Certified Product Designer</li>
-            <li>UX Champion 2021</li>
-            <li>Design Innovator 2020</li>
-            <li>Top Freelancer 2018</li>
+          <ul className="space-y-3 text-gray-700">
+            <li className="flex items-start">
+              <span className="text-orange-400 mr-2">•</span>
+              <span>Google Cloud Infrastructure – Google</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-orange-400 mr-2">•</span>
+              <span>Cloud Computing – NPTEL (Elite, 69/100)</span>
+            </li>
           </ul>
         </div>
       </section>
@@ -61,7 +136,7 @@ export default function Resume() {
       {/* Contact CTA */}
       <section className="max-w-4xl mx-auto py-12 px-4 text-center">
         <h2 className="text-3xl font-bold text-orange-400 mb-4">Want to collaborate?</h2>
-        <p className="text-gray-700 mb-6">I`&apos;`m open to new opportunities and creative challenges. Let`&apos;`s connect and make something great!</p>
+        <p className="text-gray-700 mb-6">I&apos;m open to new opportunities and creative challenges. Let&apos;s connect and make something great!</p>
         <a href="/contact" className="bg-orange-400 text-white px-8 py-4 rounded-full font-bold shadow hover:bg-orange-500 transition">Contact Me</a>
       </section>
     </main>
