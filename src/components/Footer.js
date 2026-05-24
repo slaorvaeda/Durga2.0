@@ -9,7 +9,7 @@ export default function Footer() {
     AOS.init({ once: true, duration: 2000 });
   }, []);
   return (
-    <footer className="bg-[#232323] text-white py-10 px-4 mt-16 rounded-b-3xl" data-aos="fade-up">
+    <footer className="bg-[#232323] text-white py-10 px-4 mt-0 rounded-b-3xl" data-aos="fade-up">
       <div className="max-w-6xl mx-auto flex flex-col gap-8">
         <div className="flex flex-col md:flex-row items-center justify-between mb-8 gap-4">
           <h2 className="text-3xl font-bold">Lets Connect there</h2>
@@ -23,7 +23,7 @@ export default function Footer() {
               <span className="bg-orange-400 rounded-full px-3 py-1 font-bold text-black">DN</span>
               <span className="font-bold text-lg tracking-wide">DNAYAK</span>
             </div>
-            <p className="text-gray-300 text-sm">Full Stack MERN Developer with 3 years of experience building scalable web applications using React.js, Node.js, Express.js, and MongoDB. Experienced in designing RESTful APIs, implementing JWT-based authentication, role-based access control, and deploying production systems on GCP and AWS.</p>
+            <p className="text-gray-300 text-sm">Full Stack MERN Developer with 3+ years of experience building scalable web applications using React.js, Node.js, Express.js, and MongoDB. Experienced in designing RESTful APIs, implementing JWT-based authentication, role-based access control, and deploying production systems on GCP and AWS.</p>
             <div className="flex gap-3 mt-2 text-xl">
               <Link href="#" aria-label="Facebook" className="hover:text-orange-400">FB</Link>
               <Link href="#" aria-label="Instagram" className="hover:text-orange-400">IG</Link>

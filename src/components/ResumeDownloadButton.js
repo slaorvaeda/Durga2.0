@@ -3,8 +3,8 @@
 export default function ResumeDownloadButton() {
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/Durga_new.pdf"; // Place your resume file in public/Durga_new.pdf
-    link.download = "Durga_new.pdf";
+    link.href = "/durga-experience.pdf";
+    link.download = "durga-experience.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

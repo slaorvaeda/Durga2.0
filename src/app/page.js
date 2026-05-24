@@ -1,6 +1,6 @@
 "use client";
 
-import SkillCard from "../components/SkillCard";
+import PreferableSkillCardsGrid from "@/components/PreferableSkillCardsGrid";
 import Testimonials from "../components/Testimonials";
 import ProjectIdeaDiscuss from "../components/ProjectIdeaDiscuss";
 import BlogPosts from "../components/BlogPosts";
@@ -16,9 +16,6 @@ import Services from "@/components/Services";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import GsapShowcase from "../components/GsapShowcase";
-import { FaDocker, FaGithubSquare, FaNode, FaPython, FaReact } from "react-icons/fa";
-import { RiFirebaseFill, RiNextjsFill, RiTailwindCssFill, RiVercelFill } from "react-icons/ri";
-import { SiKubernetes, SiTypescript } from "react-icons/si";
 
 export default function Home() {
   const heroRef = useRef(null);
@@ -72,21 +69,10 @@ export default function Home() {
         {/* Skills Section */}
       <div className="w-9/10 m-auto bg-black/10 flex flex-wrap gap-8 justify-center py-12 rounded-2xl mb-4 border-b-4 border-gray-300" data-aos="fade-up">
       <h2 className="text-4xl font-bold w-full px-16">
-            <span className="text-gray-900">Prefeable for </span>
-            <span className="text-orange-400">my Skils</span>
+            <span className="text-gray-900">Preferable for </span>
+            <span className="text-orange-400">my Skills</span>
           </h2>
-        <SkillCard name="React" icon={<FaReact />} level={90} bg="text-sky-300"/>
-        <SkillCard name="Node.js" icon={<FaNode />} level={80} bg="text-green-300"/>
-        <SkillCard name="Next.js" icon={<RiNextjsFill />} level={85} bg="text-black"/>
-        <SkillCard name="Tailwind CSS" icon={<RiTailwindCssFill />} level={88} bg="text-blue-300"/>
-        <SkillCard name="TypeScript" icon={<SiTypescript />} level={75} bg="text-blue-800"/>
-
-        <SkillCard name="Python" icon={<FaPython />} level={90} bg="text-black"/>
-        <SkillCard name="Docker" icon={<FaDocker />} level={60} bg="text-sky-500"/>
-        <SkillCard name="Kubernetes" icon={<SiKubernetes />} level={55} bg="text-blue-700"/>
-        <SkillCard name="GitHub" icon={<FaGithubSquare />} level={88} bg="text-black"/>
-        <SkillCard name="Vercel" icon={<RiVercelFill />} level={75} bg="text-black"/>
-        <SkillCard name="Firebase" icon={<RiFirebaseFill />} level={75} bg="text-yellow-500"/>
+        <PreferableSkillCardsGrid className="px-2 py-4" />
       </div>
       <div data-aos="fade-up">
         <PortfolioShowcase />

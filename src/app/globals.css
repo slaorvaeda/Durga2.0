@@ -24,3 +24,42 @@ html, body {
   font-family: 'Urbanist',sans-serif;
 }
 
+/* Preferable skills: filter + card entrance */
+@keyframes preferable-skill-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes preferable-filter-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgb(251 146 60 / 0.35);
+  }
+  50% {
+    box-shadow: 0 0 0 6px rgb(251 146 60 / 0);
+  }
+}
+
+.preferable-skill-card {
+  animation: preferable-skill-in 0.45s ease-out both;
+}
+
+.preferable-filter-active {
+  animation: preferable-filter-glow 2s ease-in-out infinite;
+}
+
+@keyframes preferable-shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
+

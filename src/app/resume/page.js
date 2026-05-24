@@ -1,4 +1,4 @@
-
+import ResumePreferableSkills from "@/components/ResumePreferableSkills";
 
 export default function Resume() {
   return (
@@ -6,7 +6,7 @@ export default function Resume() {
       {/* Personal Summary */}
       <section className="max-w-4xl mx-auto py-16 px-4 text-center">
         <h1 className="text-5xl font-extrabold mb-4 text-orange-400">My Resume</h1>
-        <p className="text-lg text-gray-700 mb-8">Full Stack MERN Developer with 3 years of experience building scalable web applications using React.js, Node.js, Express.js, and MongoDB. Experienced in designing RESTful APIs, implementing JWT-based authentication, role-based access control, and deploying production systems on GCP and AWS.</p>
+        <p className="text-lg text-gray-700 mb-8">Full Stack MERN Developer with 3+ years of experience building scalable web applications using React.js, Node.js, Express.js, and MongoDB. Experienced in designing RESTful APIs, implementing JWT-based authentication, role-based access control, and deploying production systems on GCP and AWS.</p>
       </section>
 
       {/* Education */}
@@ -30,6 +30,23 @@ export default function Resume() {
       <section className="max-w-4xl mx-auto py-8 px-4">
         <h2 className="text-3xl font-bold mb-6 text-orange-400">Work Experience</h2>
         <div className="space-y-6">
+          <div className="bg-white rounded-xl shadow p-6 border border-orange-100">
+            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 mb-3">
+              <div>
+                <h3 className="font-bold text-lg text-gray-900">Full Stack Developer</h3>
+                <p className="text-orange-400 font-semibold">Dyne Infotech</p>
+                <p className="text-sm text-gray-600 mt-1">Product: DockLevel — CFS logistics, shipment visibility, AI/RAG, and batch pipelines</p>
+              </div>
+              <span className="text-gray-600 text-sm shrink-0">2026 - Present</span>
+            </div>
+            <ul className="list-disc list-inside text-gray-700 space-y-2">
+              <li>Develop DockLevel for container-freight (CFS) operations: HBL/MBL tracking, status timelines, charges/releases, and multi-warehouse lane concepts</li>
+              <li>Integrate AI features including RAG (retrieval-augmented generation) over logistics documents and internal knowledge to support smarter workflows</li>
+              <li>Build and operate batch workers and queue-based jobs for shipment processing, sync, retries/dead-letter handling, and related background pipelines</li>
+              <li>Work across Next.js (App Router), NestJS, TypeScript, PostgreSQL/Prisma, and AWS Lambda–based provider integrations</li>
+              <li>Contribute to delivery pipelines: GitHub Actions, Vercel (frontend), and cloud-hosted APIs</li>
+            </ul>
+          </div>
           <div className="bg-white rounded-xl shadow p-6 border border-orange-100">
             <div className="flex justify-between items-start mb-3">
               <div>
@@ -71,7 +88,7 @@ export default function Resume() {
             <div>
               <h3 className="font-semibold text-gray-900 mb-2">Languages:</h3>
               <div className="flex flex-wrap gap-2">
-                {['JavaScript', 'Python'].map(skill => (
+                {['JavaScript', 'TypeScript', 'Python'].map(skill => (
                   <span key={skill} className="bg-orange-100 rounded-full px-4 py-2 text-gray-700 font-semibold text-sm">{skill}</span>
                 ))}
               </div>
@@ -79,7 +96,7 @@ export default function Resume() {
             <div>
               <h3 className="font-semibold text-gray-900 mb-2">Frontend:</h3>
               <div className="flex flex-wrap gap-2">
-                {['React.js', 'Next.js', 'Tailwind CSS'].map(skill => (
+                {['React.js', 'Next.js', 'Tailwind CSS', 'TanStack Query', 'Zustand', 'Redux'].map(skill => (
                   <span key={skill} className="bg-orange-100 rounded-full px-4 py-2 text-gray-700 font-semibold text-sm">{skill}</span>
                 ))}
               </div>
@@ -87,7 +104,7 @@ export default function Resume() {
             <div>
               <h3 className="font-semibold text-gray-900 mb-2">Backend:</h3>
               <div className="flex flex-wrap gap-2">
-                {['Node.js', 'Express.js'].map(skill => (
+                {['Node.js', 'Express.js', 'NestJS', 'REST APIs', 'GraphQL', 'tRPC', 'Socket.io', 'Fastify', 'Mongoose', 'Sequelize', 'Passport', 'FastAPI', 'Bun'].map(skill => (
                   <span key={skill} className="bg-orange-100 rounded-full px-4 py-2 text-gray-700 font-semibold text-sm">{skill}</span>
                 ))}
               </div>
@@ -95,15 +112,23 @@ export default function Resume() {
             <div>
               <h3 className="font-semibold text-gray-900 mb-2">Databases:</h3>
               <div className="flex flex-wrap gap-2">
-                {['MongoDB', 'MySQL', 'PostgreSQL'].map(skill => (
+                {['MongoDB', 'MySQL', 'PostgreSQL', 'Prisma'].map(skill => (
                   <span key={skill} className="bg-orange-100 rounded-full px-4 py-2 text-gray-700 font-semibold text-sm">{skill}</span>
                 ))}
               </div>
             </div>
             <div>
-              <h3 className="font-semibold text-gray-900 mb-2">Cloud & DevOps:</h3>
+              <h3 className="font-semibold text-gray-900 mb-2">Cloud &amp; DevOps:</h3>
               <div className="flex flex-wrap gap-2">
-                {['GCP', 'AWS EC2', 'Docker', 'CI/CD', 'NGINX'].map(skill => (
+                {['GCP', 'AWS EC2', 'AWS Lambda', 'Docker', 'Docker Compose', 'GitHub Actions', 'CI/CD', 'NGINX', 'Redis', 'BullMQ'].map(skill => (
+                  <span key={skill} className="bg-orange-100 rounded-full px-4 py-2 text-gray-700 font-semibold text-sm">{skill}</span>
+                ))}
+              </div>
+            </div>
+            <div>
+              <h3 className="font-semibold text-gray-900 mb-2">AI &amp; integrations:</h3>
+              <div className="flex flex-wrap gap-2">
+                {['RAG', 'Embeddings', 'LLM APIs', 'Vector DB'].map(skill => (
                   <span key={skill} className="bg-orange-100 rounded-full px-4 py-2 text-gray-700 font-semibold text-sm">{skill}</span>
                 ))}
               </div>
@@ -111,8 +136,44 @@ export default function Resume() {
             <div>
               <h3 className="font-semibold text-gray-900 mb-2">Tools:</h3>
               <div className="flex flex-wrap gap-2">
-                {['Git', 'GitHub', 'Postman', 'Cloudinary'].map(skill => (
+                {['Git', 'GitHub', 'Postman', 'Cloudinary', 'Jest', 'React Testing Library', 'OpenAPI'].map(skill => (
                   <span key={skill} className="bg-orange-100 rounded-full px-4 py-2 text-gray-700 font-semibold text-sm">{skill}</span>
+                ))}
+              </div>
+            </div>
+            <div className="rounded-xl border border-orange-200 bg-orange-50/60 p-4">
+              <h3 className="font-semibold text-gray-900 mb-2">Preferable</h3>
+              <p className="mb-3 text-sm text-gray-600">Highlighted strengths for full-stack, cloud, and AI-enabled products (aligned with recent work).</p>
+              <div className="flex flex-wrap gap-2">
+                {[
+                  'TypeScript',
+                  'NestJS',
+                  'Prisma',
+                  'GraphQL',
+                  'tRPC',
+                  'Mongoose',
+                  'FastAPI',
+                  'Fastify',
+                  'Socket.io',
+                  'Bun',
+                  'REST APIs',
+                  'AWS Lambda',
+                  'Redis',
+                  'BullMQ',
+                  'RAG',
+                  'Embeddings',
+                  'LLM APIs',
+                  'GitHub Actions',
+                  'Docker Compose',
+                  'TanStack Query',
+                  'Zustand',
+                  'Redux',
+                  'Vector DB',
+                  'Jest',
+                  'React Testing Library',
+                  'OpenAPI',
+                ].map(skill => (
+                  <span key={skill} className="rounded-full border border-orange-300 bg-white px-4 py-2 text-sm font-semibold text-gray-800 shadow-sm">{skill}</span>
                 ))}
               </div>
             </div>
@@ -132,6 +193,8 @@ export default function Resume() {
           </ul>
         </div>
       </section>
+
+      <ResumePreferableSkills />
 
       {/* Contact CTA */}
       <section className="max-w-4xl mx-auto py-12 px-4 text-center">

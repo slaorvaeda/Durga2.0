@@ -1,6 +1,7 @@
 "use client";
 import ResumeDownloadButton from "@/components/ResumeDownloadButton";
 import SkillsTree from "@/components/SkillsTree";
+import AboutBlueprintRoles from "@/components/AboutBlueprintRoles";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -59,8 +60,7 @@ export default function About() {
             <Image width={150} height={150} src="https://durga-nayak.vercel.app/assets/fevicon-DHXt3vbQ.png" alt="Designer" className="w-38 h-38 object-cover rounded-full mb-2" />
             <div className="text-white font-bold text-lg mb-1">Durga madhab Nayak</div>
             <div className="text-xs text-gray-300 mb-2">Full Stack Developer</div>
-            <div className="text-xs text-gray-400 mb-2">Full Stack MERN Developer with 3 years of experience building scalable web applications. Currently working as a freelancer, delivering end-to-end solutions using React.js, Node.js, Express.js, and MongoDB.</div>
-            <a href="#contact" className="mt-2 px-4 py-2 rounded-full bg-orange-400 text-white font-semibold text-xs shadow hover:bg-orange-500 transition">Let`&apos;` start a project together!</a>
+            <div className="text-xs text-gray-400 mb-2">Full Stack MERN Developer with 3+ years of experience building scalable web applications. At Dyne Infotech (2026–present) on DockLevel—logistics visibility with Next.js &amp; NestJS, plus AI/RAG integrations and batch job pipelines—while continuing selective freelance work with React.js, Node.js, Express.js, and MongoDB.</div>
             <a href="#contact" className="mt-2 px-4 py-2 rounded-full bg-orange-400 text-white font-semibold text-xs shadow hover:bg-orange-500 transition">Let&apos;s start a project together!</a>
           </div>
           {/* Card 4: Dog lover */}
@@ -81,6 +81,7 @@ export default function About() {
         </div>
     </main>
     <SkillsTree />
+    <AboutBlueprintRoles />
     </>
   );
 }

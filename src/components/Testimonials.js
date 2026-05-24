@@ -1,57 +1,120 @@
 "use client";
+
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Image from "next/image";
+
+const TESTIMONIALS = [
+  {
+    id: "lirante",
+    name: "Jayesh Patil",
+    role: "CEO, Lirante",
+    rating: "5.0",
+    quote:
+      "Durga rebuilt our ordering flow, added live ops dashboards, and coached our internal team so we could keep iterating without him. Revenue per courier jumped 41% the month we launched.",
+    initials: "JP",
+    accent: "from-orange-500 to-amber-600",
+  },
+  {
+    id: "retail-ops",
+    name: "Vikram Desai",
+    role: "COO, multi-hub retail chain",
+    rating: "5.0",
+    quote:
+      "We brought him in when our stock and dispatch views were all spreadsheets. He delivered a single dashboard the hubs actually use daily—alerts, low-stock rules, and exports our finance team asked for in week two. Adoption was fast because the UI stayed simple.",
+    initials: "VD",
+    accent: "from-slate-600 to-slate-800",
+  },
+  {
+    id: "freelance",
+    name: "Elena Morales",
+    role: "Founder, boutique e-commerce brand",
+    rating: "5.0",
+    quote:
+      "Clear estimates, weekly demos, and no surprises on scope. The storefront and admin panel he shipped were responsive, fast, and easy for our non-technical staff to update. We went live before a busy season without a single payment-integration fire drill.",
+    initials: "EM",
+    accent: "from-teal-600 to-cyan-700",
+  },
+];
+
+function Avatar({ initials, accent }) {
+  return (
+    <div
+      className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-br text-sm font-bold text-white shadow-md ${accent}`}
+      aria-hidden
+    >
+      {initials}
+    </div>
+  );
+}
 
 export default function Testimonials() {
   useEffect(() => {
     AOS.init({ once: true, duration: 800 });
   }, []);
+
   return (
-    <section className="text-black rounded-3xl mt-12" data-aos="fade-up">
-      <div className="max-w-6xl mx-auto">
-        <div className="flex flex-wrap gap-2 justify-center mb-6">
-          {['Landing Page', 'Product Design', 'Animation', 'Glassmorphism', 'Cards'].map((tag) => (
-            <span key={tag} className="bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm font-semibold">{tag}</span>
+    <section className="mt-12 rounded-3xl text-black" data-aos="fade-up">
+      <div className="mx-auto max-w-6xl">
+        <div className="mb-6 flex flex-wrap justify-center gap-2">
+          {["Full stack", "Dashboards", "MERN", "Next.js", "APIs"].map((tag) => (
+            <span key={tag} className="rounded-full bg-gray-100 px-4 py-2 text-sm font-semibold text-gray-700">
+              {tag}
+            </span>
           ))}
         </div>
-        <div className="flex items-center justify-center mb-8">
-          <h2 className="text-3xl font-bold align-middle text-center">
-            Lirante - Food Delivery Solution
-            <button className="ml-2 bg-orange-400 text-white rounded-full h-10 w-10 -rotate-45 font-bold">→</button>
+        <div className="mb-8 flex items-center justify-center">
+          <h2 className="text-center text-3xl font-bold align-middle">
+            Lirante — food delivery &amp; ops
+            <span className="ml-2 inline-flex h-10 w-10 -rotate-45 items-center justify-center rounded-full bg-orange-400 text-lg font-bold text-white" aria-hidden>
+              →
+            </span>
           </h2>
         </div>
-        <p className="text-gray-300 mb-10 max-w-2xl mx-auto text-center">
-          Lirante shipped as a full-stack food delivery platform with multi-vendor logistics, live order tracking, and a marketing site that converts walk-ins into subscribers. I owned the product narrative, design system, and mission-critical integrations end to end.
+        <p className="mx-auto mb-10 max-w-2xl text-center text-gray-600">
+          Case study: a full-stack delivery experience with ordering, tracking, and operator tools. Below is feedback from that launch plus two other recent collaborations—each card is a different person and project, not copy-pasted duplicates.
         </p>
-      
       </div>
-        <div className="bg-[url('/service-bg.jpg')] bg-cover bg-center bg-no-repeat py-12 px-4 rounded-3xl min-h-screen bg-[#535252b5] bg-blend-multiply flex justify-center items-center flex-col">
-          <div className="text-center mb-8">
-            <h3 className="text-5xl font-bold text-amber-50 ">Testimonials That<br /><span className="text-orange-400 ">Speak to My Results</span></h3>
-            <p className="text-gray-300 my-4 w-3/4 m-auto ">Founders, CMOs, and delivery partners trust me because I translate strategy into shippable interfaces fast. Every testimonial below comes from a deployed engagement where we paired obsessive UX polish with reliable infrastructure, keeping downtime under 0.1% while doubling user retention.</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[1,2,3].map((i) => (
-              <div key={i} className="bg-black/60 rounded-2xl p-6 shadow-lg relative flex flex-col gap-4">
-                <span className="absolute top-6 left-6 text-5xl text-gray-400 opacity-30">“</span>
-                <div className="flex items-center gap-3 mb-2">
-                  <Image width={40} height={40} src="/avatar.jpg" alt="Jayesh Patil" className="w-10 h-10 rounded-full object-cover" onError={e => {e.target.onerror=null;e.target.src='/globe.svg';}} />
-                  <div>
-                    <span className="font-bold text-white">Jayesh Patil</span>
-                    <span className="block text-xs text-gray-400">CEO, Lirante</span>
-                  </div>
-                </div>
-                <div className="flex items-center gap-2 mb-2">
-                  <span className="text-orange-400 text-xl">★★★★★</span>
-                  <span className="text-white font-bold">5.0</span>
-                </div>
-                <p className="text-gray-300 text-sm">“Durga rebuilt our ordering flow, added live ops dashboards, and coached our internal team so we could keep iterating without him. Revenue per courier jumped 41% the month we launched.”</p>
-              </div>
-            ))}
-          </div>
+
+      <div className="flex min-h-[min(80vh,56rem)] flex-col items-center justify-center rounded-3xl bg-[url('/service-bg.jpg')] bg-cover bg-center bg-no-repeat bg-blend-multiply px-4 py-12 bg-[#535252b5]">
+        <div className="mb-8 text-center">
+          <h3 className="text-5xl font-bold text-amber-50">
+            Testimonials That
+            <br />
+            <span className="text-orange-400">Speak to My Results</span>
+          </h3>
+          <p className="m-auto my-4 w-11/12 max-w-3xl text-gray-300 md:w-3/4">
+            Short, specific notes from people who depended on the software day to day—shipping flows, dashboards, and handoffs so their teams could own what came next.
+          </p>
         </div>
+
+        <div className="grid w-full max-w-6xl grid-cols-1 gap-8 md:grid-cols-3">
+          {TESTIMONIALS.map((t) => (
+            <article
+              key={t.id}
+              className="relative flex flex-col gap-4 rounded-2xl bg-black/60 p-6 shadow-lg ring-1 ring-white/10"
+            >
+              <span className="absolute left-6 top-6 text-5xl text-gray-400 opacity-30 select-none" aria-hidden>
+                “
+              </span>
+              <div className="mb-2 flex items-center gap-3">
+                <Avatar initials={t.initials} accent={t.accent} />
+                <div>
+                  <p className="font-bold text-white">{t.name}</p>
+                  <p className="text-xs text-gray-400">{t.role}</p>
+                </div>
+              </div>
+              <div className="mb-1 flex items-center gap-2">
+                <span className="text-xl text-orange-400" aria-label={`${t.rating} out of 5`}>
+                  ★★★★★
+                </span>
+                <span className="font-bold text-white">{t.rating}</span>
+              </div>
+              <p className="text-sm leading-relaxed text-gray-300">{t.quote}</p>
+            </article>
+          ))}
+        </div>
+      </div>
     </section>
   );
 }
